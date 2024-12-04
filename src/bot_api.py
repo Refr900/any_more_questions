@@ -3,6 +3,7 @@ import threading
 import logging
 from aiogram import F, Bot, Dispatcher
 from aiogram.types import Message
+from aiogram.enums import ParseMode
 from aiogram.filters import Command
 
 from settings import Settings
@@ -38,14 +39,18 @@ class MyBot:
         temporary = await message.reply("Запрос принят, секунду :D")
         answer = self.get_answer(message.text)
         await temporary.delete()
-        await message.reply(answer)
+        await message.reply(
+            answer, 
+            parse_mode=ParseMode.MARKDOWN,
+        )
         logging.info(f"question by {message.from_user.full_name}({message.from_user.id}) complete!")
     
     def get_answer(self, question: str) -> str:
         # TODO: Add thread pool 
         return self.llm.question(
             question, 
-            max_tokens=500
+            # So now this hardcode value 
+            max_tokens=1500
         )
     
     
