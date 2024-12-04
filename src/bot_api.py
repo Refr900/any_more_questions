@@ -43,7 +43,10 @@ class MyBot:
     
     def get_answer(self, question: str) -> str:
         # TODO: Add thread pool 
-        return self.llm.question(question, 500)
+        return self.llm.question(
+            question, 
+            max_tokens=500
+        )
     
     
 
