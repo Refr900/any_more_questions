@@ -36,7 +36,7 @@ class MyBot:
     async def handle_question(self, message: Message):
         logging.info(f"question by {message.from_user.full_name}({message.from_user.id})")
         temporary = await message.reply("Запрос принят, секунду :D")
-        answer = self.add_question(message)
+        answer = self.get_answer(message.text)
         await temporary.delete()
         await message.reply(answer)
         logging.info(f"question by {message.from_user.full_name}({message.from_user.id}) complete!")
