@@ -1,17 +1,16 @@
 import logging
 import asyncio
+from dotenv import load_dotenv 
 
 from bot_api import MyBot 
-from settings import load_settings
-
-
-def init_logger():
-    logging.basicConfig(level=logging.INFO)
+from settings import load_settings_from_env
 
 
 async def main():
-    init_logger()
-    bot = MyBot(load_settings())
+    load_dotenv()
+    settings = load_settings_from_env()
+    logging.basicConfig(level=settings.logging_level)
+    bot = MyBot(settings)
     await bot.start_polling()
     
 
