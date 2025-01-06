@@ -1,7 +1,7 @@
 > [!WARNING]
 > The project was created solely for educational purposes.
 
-# What is "Any More Questions?"
+# What is "Any More Questions"?
 
 This is a simple Telegram bot that uses free cloud neural networks to analyze text and images and, of course, answer and reason about questions posed.
 
