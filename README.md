@@ -7,9 +7,8 @@ This is a simple Telegram bot that uses free cloud neural networks to analyze te
 
 ## Build
 
-You must have Python and pip suspended.
+You must have .env file with:
 
-And you must have .env file with:
 ```console
 LOGGING_LEVEL=INFO
 BOT_TOKEN=<...>
@@ -20,6 +19,8 @@ FREE_USES_COUNT=30
 ALL_FREE_USES_COUNT=1000
 USES_SPAN=3.0
 ```
+
+You must have Python and pip suspended.
 
 ```console
 git clone https://github.com/Refr900/any_more_questions.git
