@@ -5,6 +5,19 @@
 
 This is a simple Telegram bot that uses free cloud neural networks to analyze text and images and, of course, answer and reason about questions posed.
 
+## Feature
+
+- [x] Integrating the Conversational Model
+- [x] Serving multiple clients simultaneously (asynchrony and a bit of multithreading)  
+- [x] Bot memory (8 last messages)
+- [ ] Integrating the Visual Thinking Model
+- [ ] Integration with search engines
+  - [ ] DuckDuckGo 
+  - [ ] Yandex
+- [ ] Loading and analyzing documents
+- [ ] Reading sites provided by the client
+- [ ] Internet access to obtain changing information (dollar exchange rate, date)
+
 ## Build
 
 You must have .env file with:
