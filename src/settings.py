@@ -11,9 +11,10 @@ class Settings:
         self.bot_token = get_from_env("BOT_TOKEN")
         self.coder_token = get_from_env("CODER_TOKEN")
         self.vision_token = get_from_env("VISION_TOKEN")
-        # For now useless
-        # self.max_client = int(os.getenv("MAX_CLIENT"))
-        # self.max_waiting_client = int(os.getenv("MAX_WAITING_CLIENT"))
+        self.max_client_count = int(get_from_env("MAX_CLIENT_COUNT"))
+        self.free_uses_count = int(get_from_env("FREE_USES_COUNT"))
+        self.all_free_uses_count = int(get_from_env("ALL_FREE_USES_COUNT"))
+        self.uses_span = float(get_from_env("USES_SPAN"))
     
     
 def get_from_env(name: str) -> str:

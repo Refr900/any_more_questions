@@ -1,5 +1,6 @@
 python-dotenv
 logging
 asyncio
+aiohttp
 aiogram
 huggingface_hub

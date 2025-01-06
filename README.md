@@ -9,6 +9,18 @@ This is a simple Telegram bot that uses free cloud neural networks to analyze te
 
 You must have Python and pip suspended.
 
+And you must have .env file with:
+```console
+LOGGING_LEVEL=INFO
+BOT_TOKEN=<...>
+CODER_TOKEN=<...>
+VISION_TOKEN=<...>
+MAX_CLIENT_COUNT=5
+FREE_USES_COUNT=30
+ALL_FREE_USES_COUNT=1000
+USES_SPAN=3.0
+```
+
 ```console
 git clone https://github.com/Refr900/any_more_questions.git
 cd any_more_questions 
