@@ -7,16 +7,13 @@ This is a simple Telegram bot that uses free cloud neural networks to analyze te
 
 ## Feature
 
-- [x] Integrating the Conversational Model
+- [x] Integrating of the Conversational Model (DeepSeek-V3)
 - [x] Serving multiple clients simultaneously (asynchrony and a bit of multithreading)  
 - [x] Bot memory (8 last messages)
-- [ ] Integrating the Visual Thinking Model
-- [ ] Integration with search engines
-  - [ ] DuckDuckGo 
-  - [ ] Yandex
+- [ ] Integrating of the Visual Thinking Model
+- [x] Integration with search engines (now only Google)
 - [ ] Loading and analyzing documents
 - [ ] Reading sites provided by the client
-- [ ] Internet access to obtain changing information (dollar exchange rate, date)
 
 ## Build
 
@@ -37,7 +34,7 @@ You must have Python and pip suspended.
 
 ```console
 git clone https://github.com/Refr900/any_more_questions.git
-cd any_more_questions 
+cd any_more_questions
 pip install -r requirements.txt
 python src\main.py
 ```
