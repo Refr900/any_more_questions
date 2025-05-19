@@ -9,11 +9,10 @@ class Settings:
             self.logging_level = logging.ERROR
             
         self.bot_token = get_from_env("BOT_TOKEN")
-        self.coder_token = get_from_env("CODER_TOKEN")
-        self.vision_token = get_from_env("VISION_TOKEN")
+        self.inference_token = get_from_env("INFERENCE_TOKEN")
+        self.free_model_token = get_from_env("FREE_MODEL_TOKEN")
         self.max_client_count = int(get_from_env("MAX_CLIENT_COUNT"))
         self.free_uses_count = int(get_from_env("FREE_USES_COUNT"))
-        self.all_free_uses_count = int(get_from_env("ALL_FREE_USES_COUNT"))
         self.uses_span = float(get_from_env("USES_SPAN"))
     
     
